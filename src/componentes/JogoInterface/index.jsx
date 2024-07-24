@@ -99,7 +99,7 @@ const JogoInterface = ({
     }
 
     mensagem +=
-      ' Jogue você também: https://numero-secreto-react.vercel.app/';
+      ' Jogue você também:';
    return mensagem;
   };
 
@@ -187,21 +187,21 @@ const JogoInterface = ({
             }}
           >
             <FacebookShareButton
-              url={window.location.href}
+              url={https://numero-secreto-react.vercel.app/}
               quote={gerarMensagemCompartilhamento()}
             >
               <FacebookIcon size={32} round={true} />
             </FacebookShareButton>
 
             <TwitterShareButton
-              url={window.location.href}
+              url={https://numero-secreto-react.vercel.app/}
               title={gerarMensagemCompartilhamento()}
             >
               <TwitterIcon size={32} round={true} />
             </TwitterShareButton>
 
             <WhatsappShareButton
-              url={}
+              url={https://numero-secreto-react.vercel.app/}
               title={gerarMensagemCompartilhamento()}
             >
               <WhatsappIcon size={32} round={true} />
