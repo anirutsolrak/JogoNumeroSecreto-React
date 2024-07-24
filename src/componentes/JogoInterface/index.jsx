@@ -99,8 +99,8 @@ const JogoInterface = ({
     }
 
     mensagem +=
-      ' Jogue você também: https://numero-secreto-react.vercel.app/';
-   // return mensagem;
+      ' Jogue você também:';
+   return mensagem;
   };
 
   return (
