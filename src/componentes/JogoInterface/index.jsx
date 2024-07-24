@@ -99,7 +99,7 @@ const JogoInterface = ({
     }
 
     mensagem +=
-      ' Jogue você também:https://numero-secreto-react.vercel.app/';
+      ' Jogue você também: https://numero-secreto-react.vercel.app/';
    return mensagem;
   };
 
@@ -201,7 +201,7 @@ const JogoInterface = ({
             </TwitterShareButton>
 
             <WhatsappShareButton
-              url={window.location.href}
+              url={}
               title={gerarMensagemCompartilhamento()}
             >
               <WhatsappIcon size={32} round={true} />
