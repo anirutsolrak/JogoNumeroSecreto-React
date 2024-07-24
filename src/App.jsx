@@ -6,6 +6,7 @@ import Container from '@mui/material/Container';
 import JogoInterface from './componentes/JogoInterface';
 import Estatisticas from './componentes/Estatisticas';
 import { Howl } from 'howler';
+import yourBackgroundImage from './assets/your-background-image.jpg'; // Utilize 'import' para imagens
 
 const temaEscuro = createTheme({
   palette: {
@@ -27,6 +28,13 @@ const temaEscuro = createTheme({
     fontFamily: 'Roboto, sans-serif',
   },
 });
+
+const planodeFundo = {
+  backgroundImage: `url(${yourBackgroundImage})`, // Referencie a imagem importada
+  backgroundSize: 'cover',
+  height: '200px',
+  // Outros estilos conforme necessário
+};
 
 function App() {
   const gerarNumeroSecreto = (dificuldadeAtual) => {
@@ -98,6 +106,7 @@ function App() {
   const handleVitoria = (tentativasDaRodada) => {
     setVitorias((vitorias) => vitorias + 1);
     setTotalTentativas((totalTentativas) => totalTentativas + tentativasDaRodada);
+    reiniciarJogo();
   };
 
   const reiniciarJogo = () => {
@@ -112,8 +121,9 @@ function App() {
   return (
     <ThemeProvider theme={temaEscuro}>
       <CssBaseline />
-      <Container maxWidth="sm">
+      <Container style={planodeFundo} maxWidth="xl" >
         <JogoInterface
+        
           numeroSecreto={numeroSecreto}
           dificuldade={dificuldade}
           onDificuldadeChange={handleDificuldadeChange}
