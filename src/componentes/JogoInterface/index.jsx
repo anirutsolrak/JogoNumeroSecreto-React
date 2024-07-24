@@ -99,7 +99,7 @@ const JogoInterface = ({
     }
 
     mensagem +=
-      ' Jogue você também: https://jogo-do-numero-secreto-ivory.vercel.app/';
+      ' Jogue você também: https://numero-secreto-react.vercel.app/';
     return mensagem;
   };
 
