@@ -187,21 +187,21 @@ const JogoInterface = ({
             }}
           >
             <FacebookShareButton
-              url={`$(https://numero-secreto-react.vercel.app/)`}
+              url={`https://numero-secreto-react.vercel.app/`}
               quote={gerarMensagemCompartilhamento()}
             >
               <FacebookIcon size={32} round={true} />
             </FacebookShareButton>
 
             <TwitterShareButton
-              url={`$(https://numero-secreto-react.vercel.app/)`}
+              url={`https://numero-secreto-react.vercel.app/`}
               title={gerarMensagemCompartilhamento()}
             >
               <TwitterIcon size={32} round={true} />
             </TwitterShareButton>
 
             <WhatsappShareButton
-              url={`$(https://numero-secreto-react.vercel.app/)`}
+              url={`https://numero-secreto-react.vercel.app/`}
               title={gerarMensagemCompartilhamento()}
             >
               <WhatsappIcon size={32} round={true} />
